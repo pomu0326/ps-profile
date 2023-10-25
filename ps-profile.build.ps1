@@ -7,5 +7,5 @@
         "${env:UserProfile}\Documents\PowerShell\Microsoft.VSCode_profile.ps1"
     )
     $Target `
-    | ForEach-Object { New-Item -Type HardLink -Path $Profile -Target $_ -Force }
+    | ForEach-Object { New-Item -Type HardLink -Path $_ -Target $Profile -Force }
 }
